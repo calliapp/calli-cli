@@ -23,25 +23,27 @@ an open-source, minimalist calendar API and CLI
 - Convert model logic to UNIX-time
 - remind
 - today
-- delete
-
-## Current
-- write input handling module
-- UNIQUE TOKENS
-
-## Next
 - tomorrow
-- next
-- search
+- week
+- delete
 - CLI docs
+- edit (client side)
+- webapp edit
+- webapp delete
+- CLI next event
+- CLI search by time range
+- CLI search by time start
+- API GET refinement
+- write input handling module
 - API docs
+- webdash buttons - ???
 
 
-### Soon
-- Complete JSON pretty-printer module
+
+## TODO NEXT
+-
 
 
-### Schedule
 
 
 ### Far
