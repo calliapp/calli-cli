@@ -187,9 +187,9 @@ def delete(event_hex):
             continue
     delete_d['hex'] = delete_a
     pending = requests.delete(url, json=json.loads(json.dumps(delete_d)), headers={'token': token})
-    if pending.status_code == 204:
+    if pending.status_code == 204 or pending.status_code == 200:
         p = inflect.engine()
-        click.echo(f"{p.no('event', len(delete_a))} events successfully deleted")
+        click.echo(f"{p.no('event', len(delete_a))} successfully deleted")
     else:
         click.echo(click.style('deletion failed', fg='red'))
         click.echo(click.style('please check that the events are valid', fg='yellow'))
